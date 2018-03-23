@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.passagemintent.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="519dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/txtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtSobrenome"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:hint="Digite seu nome"
+            android:inputType="text"
+            android:singleLine="false" />
+
+        <EditText
+            android:id="@+id/txtSobrenome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtTelefone"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="27dp"
+            android:ems="10"
+            android:hint="Digite seu sobrenome"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Digite seu telefone"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTelefone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp"
+            android:elevation="0dp"
+            android:text="Ok"
+            android:textColor="@android:color/holo_blue_light" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif"
+            android:text="Ligue gratuitamente !"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
